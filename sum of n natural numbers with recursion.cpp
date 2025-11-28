@@ -1,0 +1,16 @@
+//wriite a c program of sum of n natural numbers with recursion
+#include<stdio.h>
+int sum(int n)
+{
+	if(n==0)
+	return 0;
+else
+   return n+sum(n-1);
+}
+int main()
+{
+	int n;
+	printf("enter n value:");
+	scanf("%d" ,&n);
+	printf("%d",sum(n));
+}
